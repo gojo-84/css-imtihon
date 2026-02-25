@@ -9,7 +9,94 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="top-nav">
+    <div class="container nav-content">
+        <ul class="nav-links">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Полезные статьи</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
 
+        <div class="nav-search">
+            <div class="search-box">
+                <input type="text" placeholder="Поиск">
+                <button type="submit" class="search-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+      
+        <div class="nav-right">
+            <div class="auth-links">
+                <a href="#" class="login">Вход</a>
+                <a href="#" class="register">Регистрация</a>
+            </div>
+            <div class="location">
+                <span>Москва</span>
+                <i class="arrow-down"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+<header class="site-header">
+    
+    
+
+    <div class="header-main-info">
+        <div class="container-header main-row">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Русские травы">
+            </div>
+            
+            <div class="address-info">
+                <p>г. Москва, ул. Прянишникова, 19А стр.4</p>
+                <span>Пн-Пт 9:00-18:00</span>
+            </div>
+
+            <div class="contacts-info">
+                <div class="contact-item">
+                    <span>📩 Gazon77Bot</span>
+                </div>
+                <div class="contact-item">
+                    <span>📧 info@rutrav.ru</span>
+                </div>
+            </div>
+
+            <div class="phone-info">
+                <a href="tel:+74957779087">+7 (495) 777-90-87</a>
+                <p>8 (800) 775-27-56 <br> <small>(Звонок бесплатный)</small></p>
+            </div>
+
+            <button class="call-btn">Заказать звонок</button>
+        </div>
+    </div>
+
+    <div class="header-bottom-nav">
+        <div class="container-header nav-row">
+            <div class="catalog-btn">
+                <span>Каталог</span>
+                <i class="arrow"></i>
+            </div>
+            <ul class="main-menu">
+                <li><a href="#">Фирменные газонные травосмеси</a></li>
+                <li><a href="#">Дешёвые травосмеси</a></li>
+                <li><a href="#">Травосмесь на заказ</a></li>
+            </ul>
+            <div class="header-cart">
+                <div class="cart-icon">
+                    <span class="badge">2</span>
+                    🛒
+                </div>
+                <span class="cart-text">В корзине: <strong>74 899 ₽</strong></span>
+            </div>
+        </div>
+    </div>
+</header>
     <div class="mega-menu-container">
         <div class="container">
             <div class="mega-menu-grid">
@@ -85,29 +172,7 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="f-col">
-                <img src="./img/logo (2).png" alt="Logo" class="f-logo">
-                <p>Copyright 2021 ©.<br>Агрофирма Русские Травы.<br>Все права защищены.</p>
-            </div>
-            <div class="f-col">
-                <h5>Информация</h5>
-                <ul>
-                    <li>Главная</li>
-                    <li>Каталог</li>
-                    <li>Оплата</li>
-                    <li>Доставка</li>
-                </ul>
-            </div>
-            <div class="f-col">
-                <h5>Контакты</h5>
-                <p>+7 (495) 777-90-87</p>
-                <p>info@rutrav.ru</p>
-                <p>г. Москва, ул. Прянишникова, 19А</p>
-            </div>
-        </div>
-    </footer>
+   
 
 </body>
 </html>

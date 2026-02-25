@@ -5,6 +5,113 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+.top-nav {
+    background-color: #f9fbf2; 
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+
+.search-box {
+    position: relative;
+    width: 280px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 40px 8px 15px;
+    border: 1px solid #b5b5b5;
+    border-radius: 25px; 
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.search-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.login { color: #4CAF50; }
+.register { 
+    color: #4CAF50; 
+    text-decoration: underline !important; 
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #666;
+}
+
+
+@media screen and (max-width: 430px) {
+    .nav-links, .nav-search {
+        display: none; /* Telefonda menyu yashirinadi */
+    }
+    .nav-content {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
 .mega-menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -86,6 +193,90 @@
 }
 
 .footer h5 { color: #4CAF50; font-size: 18px; margin-bottom: 20px; }
+.site-header {
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.container-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* Top bar */
+.header-top-links {
+    background: #fdfdf5;
+    padding: 8px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+}
+
+.top-nav { display: flex; gap: 20px; flex: 1; }
+.top-nav a { text-decoration: none; color: #666; }
+
+.top-search { position: relative; margin: 0 30px; }
+.top-search input { 
+    border-radius: 20px; border: 1px solid #ccc; 
+    padding: 4px 30px 4px 15px; width: 200px;
+}
+
+.top-auth { display: flex; gap: 15px; color: #4CAF50; font-weight: bold; }
+
+/* Main info */
+.header-main-info { padding: 20px 0; background: #fff; }
+.main-row { justify-content: space-between; }
+
+.logo img { width: 180px; }
+
+.address-info p, .phone-info a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.call-btn {
+    background: #FF6600;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px 30px 10px 30px; /* Rasmdagi original shakl */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Bottom nav */
+.header-bottom-nav {
+    background: #2D3436;
+    color: white;
+    padding: 12px 0;
+}
+
+.nav-row { justify-content: space-between; }
+
+.catalog-btn {
+    background: transparent;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-menu { display: flex; list-style: none; gap: 25px; margin: 0; padding: 0; }
+.main-menu a { color: white; text-decoration: none; font-size: 14px; }
+
+.header-cart { display: flex; align-items: center; gap: 10px; color: #4CAF50; }
+.badge {
+    background: #4CAF50;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 10px;
+}
 
 
 @media screen and (max-width: 430px) {

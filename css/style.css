@@ -5,6 +5,7 @@
   
 }
 
+
 .main-header {
     width: 100%;
     font-family: Arial, sans-serif;
@@ -287,19 +288,8 @@
     border-color: #eee;
 }
 
-@media screen and (max-width: 430px) {
-    .goods-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .popular-title {
-        font-size: 24px;
-    }
 
-    .good-card.active {
-        transform: none; 
-    }
-}
+
 .advantages-section {
     padding: 80px 0;
     color: #ffffff;
@@ -366,24 +356,7 @@
 }
 
 
-@media screen and (max-width: 430px) {
-    .advantages-container {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .adv-title {
-        font-size: 28px;
-    }
-
-    .adv-grid {
-        grid-template-columns: 1fr; 
-    }
-
-    .advantages-image {
-        order: -1; 
-    }
-}
 
 .customer-needs {
     background-color: #e6e8d2;
@@ -449,44 +422,7 @@
 }
 
 
-@media screen and (max-width: 430px) {
-    .needs-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
-    .expert-image {
-        width: 100%;
-        order: -1;
-    }
-
-    .needs-content {
-        width: 100%;
-        padding-bottom: 20px;
-    }
-
-    .needs-title {
-        font-size: 24px;
-    }
-
-    .needs-list {
-        text-align: left;
-        display: inline-block;
-    }
-}
-.consult-section {
-    padding: 60px 0;
-    text-align: center;
-    background-color: #fff;
-}
-
-.consult-title {
-    font-size: 36px;
-    color: #4CAF50;
-    margin-bottom: 50px;
-    text-align: left; 
-}
 
 .consult-grid {
     display: grid;
@@ -542,31 +478,6 @@
 }
 
 
-@media screen and (max-width: 430px) {
-    .consult-title {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .consult-grid {
-        grid-template-columns: 1fr; 
-        gap: 30px;
-    }
-
-    .consult-item {
-        align-items: center;
-        text-align: center;
-    }
-
-    .icon-shape {
-        width: 80px;
-        height: 80px;
-    }
-
-    .orange-btn {
-        width: 100%; 
-    }
-}
 .wholesale-offers {
     padding: 60px 0;
     background-color: #fff;
@@ -625,35 +536,7 @@
 }
 
 
-@media screen and (max-width: 430px) {
-    .wholesale-offers {
-        padding: 40px 15px;
-    }
 
-    .wholesale-title {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .intro-text {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .sub-intro {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .offers-list li {
-        font-size: 14px;
-        padding-left: 25px;
-    }
-}
-.clients-section {
-    padding: 60px 0;
-    background-color: #f9fcf3; 
-}
 
 .section-header {
     display: flex;
@@ -718,23 +601,7 @@
 }
 
 
-@media screen and (max-width: 430px) {
-    .section-header {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
 
-    .logos-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .logo-item img {
-        max-height: 50px; 
-    }
-}
 
 .author-signature {
     background-color: #f4f4f4;
@@ -840,18 +707,138 @@
 }
 
 
-@media screen and (max-width: 430px) {
-    .footer-grid {
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+   
+    .top-bar .container, 
+    .mid-header .container, 
+    .main-nav .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .top-nav, .auth-box, .search-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mid-header .info-item {
+        display: none; 
+    }
+
+    .mid-header .logo img {
+        max-width: 150px;
+    }
+
+    .main-nav .nav-list {
+        display: none; 
+    }
+
+   
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+   
+    .categories-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .category-item {
+        height: 150px; 
+        width: 100%;
+    }
+
+  
+    .advantages-container {
+        flex-direction: column-reverse; 
+    }
+
+    .adv-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+   
+    .goods-grid {
         grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .good-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+  
+    .consult-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .consult-item {
+        flex-direction: column;
         text-align: center;
     }
 
-    .signature-content {
-        flex-direction: column;
-        gap: 20px;
+   
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
     }
 
     .payment-icons {
         justify-content: center;
+    }
+
+    .author-signature .signature-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+   
+    .primary-btn, .call-btn, .orange-btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 20px;
+    }
+    
+    .cat-title {
+        font-size: 16px;
     }
 }
