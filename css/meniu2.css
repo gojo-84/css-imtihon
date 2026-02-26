@@ -1,0 +1,64 @@
+Mobil menyu foni
+.mobile-menu-overlay {
+    background-color: #263238; /* To'q kulrang-yashil fon */
+    padding: 20px;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Yopish tugmasi */
+.menu-close {
+    text-align: right;
+    font-size: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Menyu bo'limlari */
+.menu-item {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4CAF50; /* Yorqin yashil */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-item.link {
+    color: #4CAF50;
+    font-weight: 500;
+}
+
+/* Strelkalar */
+.arrow {
+    border: solid #4CAF50;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up { transform: rotate(-135deg); }
+.down { transform: rotate(45deg); }
+
+/* Ichki menyu (Submenu) */
+.submenu {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.submenu li {
+    padding: 10px 0;
+    color: #cfd8dc; /* Och kulrang matn */
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}

@@ -5,6 +5,12 @@
   
 }
 
+.city-select {
+    background-color: dodgerblue;
+    border-radius: 5px;
+    
+}
+
 
 .main-header {
     width: 100%;
@@ -829,9 +835,15 @@
     .primary-btn, .call-btn, .orange-btn {
         width: 100%;
         padding: 15px;
+        
     }
 }
-
+.primary-btn {
+    background-color: #0088cc;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+}
 
 @media (max-width: 480px) {
     .hero-title {

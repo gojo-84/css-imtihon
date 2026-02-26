@@ -1,0 +1,242 @@
+/* Gojo Dev - Alohida CSS fayli */
+
+/* 1. UMUMIY STILLAR */
+* {
+    box-sizing: border-box; /* padding va border element eniga ta'sir qilmaydi */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0; /* Tashqi fon */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Rasmdagidek shrift */
+    display: flex;
+    justify-content: center; /* Desktopda konteynerni markazga qo'yish */
+    padding-top: 20px;
+}
+
+/* 2. ASOSIY 600PX KONTEYNER (Bro, mana o'sha div) */
+.app-container {
+    width: 100%;
+    max-width: 600px; /* Aynan 600px */
+    background-color: #fcfdf7; /* Ichki fon */
+    overflow: hidden; /* Ichidagi qiya burchaklar kesilmasligi uchun */
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1); /* Chiroyli soya */
+    border-radius: 10px; /* Salgina silliq chetlar */
+}
+
+/* 3. HEADER STILLARI */
+.main-header {
+    background-color: #ffffff;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Yuqori qator (burger, savatcha, login, shahar) */
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #4CAF50;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #4CAF50; /* Yashil burger */
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 18px;
+}
+
+.cart-badge {
+    background: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+    position: absolute;
+    top: -8px;
+    right: -15px;
+}
+
+.auth-links {
+    font-weight: 500;
+}
+
+.auth-links a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* Markaziy qator (logo, kontaktlar) */
+.header-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-logo {
+    width: 150px; /* Logo o'lchami */
+}
+
+.header-contacts {
+    text-align: right;
+    font-size: 12px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.phone-number {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* To'q sariq tugma */
+.btn-orange-call {
+    width: 100%;
+    background-color: #FF6600;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0 25px 0 25px; /* Aynan rasmdagi qiya shakl */
+    cursor: pointer;
+}
+
+/* 4. QIDIRUV (Qora fondagi qism) */
+.dark-search-bar {
+    background-color: #2D3436; /* Qora fon */
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-icon-small {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.search-icon-small span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #ffffff; /* Oq chiziqlar */
+}
+
+.search-input-field {
+    flex: 1;
+    position: relative;
+}
+
+.search-input-field input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #666; /* Kulrang border */
+    border-radius: 20px;
+    padding: 6px 15px;
+    color: white;
+    outline: none;
+}
+
+.search-input-field .search-glass {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    color: #999;
+}
+
+/* 5. MAIN CONTENT (main_mobile (1).jpg asosida) */
+.main-wrapper {
+    padding: 15px;
+}
+
+/* Oq markaziy banner */
+.hero-banner {
+    background-color: #ffffff;
+    border-radius: 0 40px 0 40px; /* Rasmdagi diagonal burchaklar */
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-banner h1 {
+    color: #2D5A27; /* To'q yashil */
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero-banner p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.btn-orange-main {
+    width: 100%;
+    background-color: #FF6600;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10px 30px 10px 30px; /* Katta qiya shakl */
+    margin: 15px 0 10px 0;
+    cursor: pointer;
+}
+
+.cheap-link {
+    display: block;
+    color: #4CAF50;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/* YASHIL BLOKLAR GRIDI */
+.grid-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+
+.grid-block-item {
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0 40px 0 40px; /* Diagonal burchaklar */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+/* Ranglar va fonlar sections (1).jpg ga mos */
+.grid-dark-green { background-color: #2D5A27; }
+.grid-medium-green { background-color: #388E3C; }
+.grid-light-green { background-color: #4CAF50; }
+.grid-lime-green { background-color: #8BC34A; }
