@@ -781,107 +781,121 @@
 
 
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 430px) {
+   
+   
     .container {
         padding: 0 15px;
+        flex-direction: column;
+        align-items: center;
     }
 
-   
-    .top-bar .container, 
-    .mid-header .container, 
-    .main-nav .container {
-        flex-direction: column;
-        text-align: center;
+    
+    .top-bar {
+        display: none; 
+    }
+
+    .mid-header .container {
         gap: 15px;
     }
 
-    .top-nav, .auth-box, .search-box {
-        width: 100%;
-        justify-content: center;
+    .info-item {
+        text-align: center;
+        margin-bottom: 10px;
     }
 
-    .mid-header .info-item {
-        display: none; 
-    }
-
-    .mid-header .logo img {
-        max-width: 150px;
-    }
-
-    .main-nav .nav-list {
-        display: none; 
+    .logo img {
+        max-width: 180px;
+        height: auto;
     }
 
    
-    .hero-container {
+    .banner-grid {
+        display: flex;
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 220px;
+        border-radius: 0 30px 0 30px;
+    }
+
+    .large-banner {
+        height: auto;
+        min-height: 250px;
+        padding: 25px 20px;
+    }
+
+    .large-banner h2 {
+        font-size: 20px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 20px 0;
         text-align: center;
-        padding-top: 30px;
     }
 
     .hero-title {
-        font-size: 24px;
-        line-height: 1.2;
-    }
-
-    .hero-description {
-        font-size: 14px;
-    }
-
-    .hero-image {
-        margin-top: 20px;
+        font-size: 22px !important;
+        line-height: 1.3;
     }
 
     .hero-image img {
-        width: 100%;
-        max-width: 300px;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
     }
 
-   
-    .categories-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .category-item {
-        height: 150px; 
-        width: 100%;
-    }
-
-  
-    .advantages-container {
-        flex-direction: column-reverse; 
-    }
-
-    .adv-grid {
+    
+    .goods-grid {
         grid-template-columns: 1fr; 
         gap: 20px;
     }
 
-   
-    .goods-grid {
+    .good-card {
+        max-width: 100%;
+    }
+
+    .adv-grid {
         grid-template-columns: 1fr;
+    }
+
+    .advantages-image {
+        display: none; 
+    }
+
+   
+    .consult-grid {
+        grid-template-columns: 1fr; /* Elementlarni ustun shakliga keltirish */
         justify-items: center;
     }
 
-    .good-card {
+    .consult-item {
+        align-items: center;
+        text-align: center;
         width: 100%;
-        max-width: 300px;
+    }
+
+    .icon-shape {
+        margin: 0 auto 15px;
     }
 
   
-    .consult-grid {
-        grid-template-columns: 1fr;
+    .logos-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
         gap: 20px;
     }
 
-    .consult-item {
-        flex-direction: column;
-        text-align: center;
+    .logo-item img {
+        max-height: 50px;
+        filter: grayscale(0);
     }
 
-   
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
@@ -890,86 +904,17 @@
 
     .payment-icons {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .author-signature .signature-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-   
-    .primary-btn, .call-btn, .orange-btn {
+    .call-btn, .primary-btn, .orange-btn {
         width: 100%;
-        padding: 15px;
-        
+        max-width: 280px;
+        margin: 10px auto;
     }
-}
-.primary-btn {
-    background-color: #0088cc;
-    border-radius: 20px;
-    width: 150px;
-    height: 50px;
-}
 
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 20px;
-    }
-    
-    .cat-title {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 992px) {
-    .banner-grid {
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: auto;
-    }
-    .large-banner {
-        grid-row: auto;
-        grid-column: 1 / 3; 
-    }
-}
-
-@media (max-width: 500px) {
-    .banner-grid {
-        grid-template-columns: 1fr; 
-    }
-    .large-banner {
-        grid-column: 1;
-    }
-    .banner {
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .mid-header .container {
+    .signature-content {
         flex-direction: column;
-        gap: 15px;
-        text-align: center;
+        gap: 20px;
     }
-    
-    .top-bar, .main-nav .nav-list li:not(.catalog-dropdown) {
-        display: none;
-    }
-}
-
-.categories-section {
-    padding: 40px 0;
-}
-
-@media screen and (max-width: 430px) {
-    .categories-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        padding: 0 15px;
-    }
-    .main-cat { grid-row: span 1; height: 300px; }
-    .category-item { height: 200px; }
-}
-.popular-goods {
-    padding: 60px 0;
-    background-color: #f9f9f9;
 }
